@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions Pro - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">TechSolutions Pro</a>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to TechSolutions Pro</h1>
+                    <p>Innovative technology solutions for modern businesses. We help companies transform their digital presence and achieve their goals.</p>
+                    <a href="#" class="cta-button" data-page="contact">Get Started Today</a>
+                </div>
+            </section>
+
+            <!-- Image Slider -->
+            <section class="slider-container">
+                <div class="slider">
+                    <div class="slide active" style="background: linear-gradient(45deg, #667eea, #764ba2);">
+                        <div class="slide-overlay">
+                            <h3>Digital Transformation</h3>
+                            <p>Leading businesses into the digital age with cutting-edge solutions.</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background: linear-gradient(45deg, #f093fb, #f5576c);">
+                        <div class="slide-overlay">
+                            <h3>Cloud Solutions</h3>
+                            <p>Scalable cloud infrastructure that grows with your business needs.</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background: linear-gradient(45deg, #4facfe, #00f2fe);">
+                        <div class="slide-overlay">
+                            <h3>Mobile Development</h3>
+                            <p>Custom mobile applications for iOS and Android platforms.</p>
+                        </div>
+                    </div>
+                    <button class="slider-nav prev">&lt;</button>
+                    <button class="slider-nav next">&gt;</button>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <div class="container">
+                    <h2 class="section-title">Our Services</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">💻</div>
+                            <h3>Web Development</h3>
+                            <p>Custom websites and web applications built with modern technologies and best practices.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <h3>Mobile Apps</h3>
+                            <p>Native and cross-platform mobile applications for iOS and Android devices.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">☁️</div>
+                            <h3>Cloud Services</h3>
+                            <p>Scalable cloud infrastructure and migration services for enhanced performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <section class="about-content">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h2>About TechSolutions Pro</h2>
+                            <p>Founded in 2025, TechSolutions Pro has been at the forefront of digital innovation, helping businesses of all sizes transform their operations through technology.</p>
+                            <p>Our team of experienced developers, designers, and consultants work collaboratively to deliver solutions that not only meet current needs but also scale for future growth.</p>
+                            <p>We specialize in web development, mobile applications, cloud services, and digital strategy consulting. Our commitment to excellence and customer satisfaction has made us a trusted partner for over 200 companies worldwide.</p>
+                            <ul style="margin-top: 2rem;">
+                                <li style="margin-bottom: 0.5rem;">✓ 200+ Successful Projects</li>
+                                <li style="margin-bottom: 0.5rem;">✓ 50+ Enterprise Clients</li>
+                                <li style="margin-bottom: 0.5rem;">✓ 99% Customer Satisfaction</li>
+                                <li style="margin-bottom: 0.5rem;">✓ 24/7 Support Available</li>
+                            </ul>
+                        </div>
+                        <div class="about-image">
+                            <div>Our Team at Work</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <section class="contact-content">
+                <div class="container">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="contact-grid">
+                        <div class="contact-form">
+                            <h3>Send us a Message</h3>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <div class="error" id="nameError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <div class="error" id="emailError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                    <div class="error" id="phoneError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                    <div class="error" id="subjectError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+                                    <div class="error" id="messageError"></div>
+                                </div>
+                                <button type="submit" class="cta-button">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+                            <div class="contact-item">
+                                <h4>📍 Office Address</h4>
+                                <p>110 JUJA TOWN <br>KIAMBU COUNTY<br></p>
+                            </div>
+                            <div class="contact-item">
+                                <h4>📞 Phone</h4>
+                                <p>+254 767 777 888  </p>
+                            </div>
+                            <div class="contact-item">
+                                <h4>✉️ Email</h4>
+                                <p>info@techsolutionspro.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <h4>🕒 Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechSolutions Pro. All rights reserved. | Built with HTML5, CSS3, and JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
